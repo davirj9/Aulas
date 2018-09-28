@@ -1,0 +1,109 @@
+Plano de aula:
+
+Controle de tempo de aula:
+50 minutos:
+Tópicos:
+	- Introdução da aula
+	- O que é ?, Quando usar ?, Qual problema resolve ?
+	- Tipos, diferenciações, conceitos.
+	- Vamos ao código !
+	- Exercícios.
+
+Estrutura de repetição em java.
+Fonte. https://docs.oracle.com/javase/tutorial/java/nutsandbolts
+
+###################################### introdução ######################################
+O que é uma estrutura de repetição ?
+Também conhecido como loop, é basicamente um bloco de instrução que será executado enquanto determinada condição não é alcançada.
+Executa, repetidamente, um bloco “enquanto” uma expressão booleana for verdadeira.
+
+Quando usar uma estrutura de repetição ?
+Quando o objetivo for realizar loop, enquanto uma condição não é alcançada.
+	Ex. 1. Quando pegamos nosso celular para realizar uma ligação, nós discamos um número e aguardamos que a pessoa que recebe a ligação atenda a chamada.
+			Equanto não conseguimos falar com a pessoa, nos realizamos a ligação novamente.
+		2. Quando viramos a chave do nosso carro, mas ele não pega, nós viramos novamente, até que ele pegue. 
+		
+		Nos dois exemplos acima nós passariamos toda a nossa vida tentando, caso não houvesse uma interrupção, isso seria um loop infinito.
+###################################### introdução ######################################
+
+
+
+
+###################################### - O que é ?, Quando usar ?, Qual problema resolve ? ######################################
+Quantas estruturas de repetições existem ?
+3 Estruturas.
+	While(Enquanto), Do-While(Fazer enquanto) e For(para).
+	 
+	
+Como são "desenhadas" as estruturas ?
+	while:
+		ENQUANTO <CONDIÇÃO> FAÇA
+			<INSTRUÇÃO 01>
+			<INSTRUÇÃO 02>
+			<INSTRUÇÃO 03>
+			<INSTRUÇÃO N>
+		FIM ENQUANTO	
+		-
+		-
+	Do-while:
+		FAÇA 
+			<INSTRUÇÃO 01>
+			<INSTRUÇÃO 02>
+			<INSTRUÇÃO 03>
+		ENQUANTO <CONDIÇÃO>	
+		-
+		-
+	For:
+		PARA i DE a ATÉ b FAÇA
+			<INSTRUÇÃO 01>
+			<INSTRUÇÃO 02>
+			<INSTRUÇÃO 03>
+		FIM PARA	
+		Obs. Em java o for é composto por 3 expressões: declaração e inicialização, expressão condicional e expressão de interação. 
+		
+Qual a diferença entre a estrutura While e Do-While ?
+	Na estrutura While nós realizamos o teste da condição no início, já no do-while, nós executamos o bloco e após isso realizamos o teste.
+	Sendo assim, se a condição for falsa, o bloco do while não seria executado, já no do-while ele seria executado e depois testado. (Sempre executa pelo menos 1 vez).
+
+###################################### - O que é ?, Quando usar ?, Qual problema resolve ? ######################################
+
+	
+Extras: 
+	- Estrutura de controle de decisão.
+		https://docs.oracle.com/javase/tutorial/java/nutsandbolts/examples/IfElseDemo.java
+	
+	- Estrutura de controle de Fluxo.
+		https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html
+		
+	- Estrutura de controle de interrupção.	
+		Interrupção permitem que redirecionemos o fluxo de controle do programa.
+			- 03 Tipos: break, continue, return.
+				
+				01 - break: Encerra o loop e sai do escopo.
+				Código de Ex.: 
+					String nomes[] = {"Davi", "Costa", "Maçana"};
+					String nomeProcurado = "Davi";
+					boolean isNomeAchado = false;
+					
+					for (int i = 0; i < nomes.length; i ++) {
+						if(nomes[i].equals(nomeProcurado)) {
+							isNomeAchado = true;
+							break;
+						}
+					}
+					if (isNomeAchado) {
+						System.out.println("Foi encontrado o nome: " + nomeProcurado);
+					} else {
+						System.out.println("Não foi encontrado o nome: " + nomeProcurado);
+					}
+					
+				02 - continue: Quando encontrado, encerra a interação e segue para a próxima interação.
+				Código de Ex.:
+					for (int i = 0; i < 11; i ++) {
+						if (i%2!=0) {
+							continue;
+						}
+						System.out.println(i);
+					}
+				03 - return: Utilizada para sair de um método. (Está fora do contexto da estrutura de repetição)
+	
