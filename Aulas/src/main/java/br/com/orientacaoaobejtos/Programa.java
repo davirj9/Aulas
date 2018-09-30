@@ -14,7 +14,7 @@ public class Programa {
 	 */
 	public static void main(String[] args) {
 		
-		Carro carro = new Carro("Preto", "Evoque", "SUV");
+		Veiculo carro = new Carro("Preto", "Evoque", "SUV");
 		System.out.println("Carro criado:");
 		System.out.println("Cor: " + carro.getCor());
 		System.out.println("Modelo: " + carro.getModelo());
@@ -25,7 +25,7 @@ public class Programa {
 		
 		System.out.println("----------------------------------------------------");
 		
-		Moto moto = new Moto("Preto", "Harley Davidson 883", "Custom");
+		Veiculo moto = new Moto("Preto", "Harley Davidson 883", "Custom");
 		System.out.println("Moto criada:");
 		System.out.println("Cor: " + moto.getCor());
 		System.out.println("Modelo: " + moto.getModelo());
@@ -39,6 +39,7 @@ public class Programa {
 		System.out.println("Foram criados " + Moto.getQtdMotos() + " Motos.");
 		System.out.println("Foram criados " + Carro.getQtdCarros() + " Carros.");
 		System.out.println("Foram criados " + Veiculo.getQtdVeiculos() + " Veículos.");
+		
 		
 	}
 

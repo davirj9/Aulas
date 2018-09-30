@@ -1,0 +1,33 @@
+Orientação a objetos:
+
+-> Variáveis estáticas.
+	Ao definirmos uma variável como estática em uma classe, 
+ela será a mesma para todas as instâncias de um objeto. 
+Ela será compartilhada e todos os objetos que acessarem essa 
+variável estática, acessarão a mesma variável ao alterarmos o 
+valor, ele será alterado para todas as instâncias(objetos). 
+Utilizamos a palavra reservada static
+
+-> Métodos estáticos.
+	Métodos estáticos geralmente são utilizados por classes 
+utilitárias, assim podemos chamar o método a qualquer momento, 
+sem precisar instanciar a classe antes. Exemplo de um método 
+para validar CPF.
+
+-> Sobrecarga (Overload).
+	Definir o mesmo nome de um método já existente apenas com 
+quantidade e tipo de argumentos diferentes caracteriza-se a 
+sobrecarga de métodos.
+
+-> Herança.
+	É o mecanismo de criar classes a partir de classes já 
+existentes, aproveitando-se das características existentes 
+na classe a ser estendida. Esse mecanismo promove grande 
+reaproveitamento de código já existente.
+
+-> Polimorfismo.
+	Polimorfismo é o princípio pelo qual duas ou mais classes 
+derivagas da mesma superclasse podem invocar métodos com a mesma
+idenfiticação, assinatura, mas comportamentos diferentes, especializados
+para cada classe derivada, usando referência a um objeto do tipo da superclasse.
+
