@@ -40,7 +40,7 @@ public class Programa {
 		System.out.println("Foram criados " + Carro.getQtdCarros() + " Carros.");
 		System.out.println("Foram criados " + Veiculo.getQtdVeiculos() + " Veículos.");
 		
-		
 	}
-
+	
+	
 }
